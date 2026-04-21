@@ -1,10 +1,10 @@
 FROM python:3.11-slim
 
-WORKDIR /app
+WORKDIR /workapp
 
 COPY requirements.txt .
 RUN pip install -r requirements.txt
 
-COPY . .
+COPY . /workapp
 
-CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:app"]
+CMD ["gunicorn", "-b", "0.0.0.0:8080", "app:appl"]
