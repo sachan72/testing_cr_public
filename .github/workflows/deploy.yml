@@ -3,7 +3,7 @@ name: Deploy to GCP Cloud Run
 on:
   push:
     branches:
-      - .github/workflows/deploy.yml_copy
+      - dont-run
 
 jobs:
   deploy:
