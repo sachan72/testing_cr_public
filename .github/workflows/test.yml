@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: install python dependencies
-        run: cd testing.txt 
+        run: python -m pytest testing.txt 
 
       - name: display message 
         run: echo "testing done".
