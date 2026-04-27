@@ -16,9 +16,6 @@ jobs:
       - name: checkingout repos
         uses: actions/checkout@v4
 
-      - name: install python dependencies
-        run: python -m pip install --upgrade pip 
-
       - name: display message 
         run: echo "testing done".
     
