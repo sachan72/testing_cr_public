@@ -16,6 +16,9 @@ jobs:
       - name: checkingout repos
         uses: actions/checkout@v4
 
+      - name: install python dependencies
+        run: cd testing.txt 
+
       - name: display message 
         run: echo "testing done".
     
