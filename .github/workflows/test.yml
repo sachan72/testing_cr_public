@@ -3,7 +3,7 @@ name: testing demo
 on: 
   push:
     branches: 
-    - push-test
+    - main
   pull_request: 
     branches: 
     - pull-req-test
